@@ -15,6 +15,7 @@ namespace WFAnimali
             FileLogger.Instance.Log("Applicazione avviata.");
 
             CAnimale a = FactoryAnimale.Crea(TipoAnimale.Cane, "Alessandro", 5);
+            CAnimale[] zoo = { FactoryAnimale.Crea(TipoAnimale.Cane, "martino", 16), FactoryAnimale.Crea(TipoAnimale.Gatto, "krix", 18), FactoryAnimale.Crea(TipoAnimale.Corvo, "labate", 18) };
 
             Application.Run(new Form1());
         }
